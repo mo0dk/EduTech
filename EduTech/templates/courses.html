@@ -1,0 +1,59 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1">
+    <link rel="stylesheet" href="{% static '/css/courses.css'%}?version=1">
+    <title>EduTech</title>
+</head>
+
+<body>
+
+    {% include "base/menu.html" %}
+
+    <div class="container">
+
+        <div class="courses">
+
+            {% for item in courses %}
+
+            <section class="item_course">
+
+                <div class="container_avatar">
+                    <div class="avatar">
+                        <img class="img_avatar" src="{% static 'img/ours_teachers/squared_teacher' %}{{ item.teacher.id }}.jpg">
+                        <h3>{{ item.teacher.name }}</h3>
+                        <p>
+                            {{ item.teacher.description }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container_course">
+                    <nav class="course_tags">
+                        <div class="item_tags">{{ item.classNumber.number }} класс</div>
+                        <div class="item_tags">{{ item.subject.name }}</div>
+                    </nav>
+                    <h2>{{ item.name }}</h2>
+                    <div class="course_description">
+                        <p class="description">{{ item.description }}</p>
+                        <div class="btn"><a href="{{ item.get_absolute_url }}" class="pipec">Перейти</a></div>
+                    </div>
+                </div>
+
+            </section>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+    {% include "base/footer.html" %}
+
+</body>
+
+</html>

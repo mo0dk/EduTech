@@ -1,0 +1,135 @@
+.rofl__container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    color: black;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+ul li a:hover {
+    background: #3dd4cc;
+}
+
+select {
+    margin: 0;
+	text-align: left;
+	font-size: 14px;
+	position: absolute;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	padding: 2% 10%;
+}
+
+.select_wrp {
+	width: 520px;
+	margin-top: 48px;
+	float: left;
+}
+
+button {
+    display: grid;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #3dd4cc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+section {
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    margin: 4%;
+    padding: 7%;
+    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+    border-radius: 40px;
+}
+
+section li {
+    list-style: none;
+}
+
+section li a {
+    background: #3dd4cc;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0 15px 5px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+input[type=submit] {
+  display: grid;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #3dd4cc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    border: 0;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

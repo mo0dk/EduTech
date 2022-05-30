@@ -1,0 +1,26 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>Edutech</title>
+    <link rel="stylesheet" href="https://snipp.ru/cdn/chosen/1.8.7/chosen.min.css?version=1">
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js?version=1"></script>
+    <script src="https://snipp.ru/cdn/chosen/1.8.7/chosen.jquery.min.js?version=1"></script>
+    <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/stream.css'%}?version=1" type="text/css">
+</head>
+
+<body>
+
+    {% include "base/menu.html" %}
+
+    <div class="rofl__container">
+        <div class="stream">
+            <iframe width="920" height="600" src="https://www.youtube.com/embed/nnbchzfIY80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="small" class="decor"></div>
+        </div>
+    </div>
+
+    {% include "base/footer.html" %}
+
+</body>

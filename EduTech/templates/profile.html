@@ -1,0 +1,35 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1">
+    <link rel="stylesheet" href="{% static '/css/profile.css'%}?version=1">
+    <title>EduTech</title>
+</head>
+
+<body>
+    {% include "base/menu.html" %}
+    <div id="profile-main">
+        <div id="profile">
+            <div id="avatar"> <img src="{% static '/img/profile.png' %}"> </div>
+            <div id="name">{{ name }}</div>
+            <div id="email"><p>{{ email }}</p></div>
+        </div>
+        <div id="history">
+            <div id="courselist">
+                <h2>Начатые курсы</h2>
+                <ul>
+                    {% for item in current_courses %}
+                        <li>{{ item.c_name }} {{ item.c_classNumber }} класс</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% include "base/footer.html" %}
+</body>
+</html>

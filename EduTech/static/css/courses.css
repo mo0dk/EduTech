@@ -1,0 +1,123 @@
+:root {
+    --item-course: #fff;
+    --bg-color: rgb(226, 223, 223);
+}
+
+/* Courses */
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+}
+
+.search_bar {
+    max-width: 800px;
+    width: 100%;
+    min-height: 25px;
+}
+
+.item_course {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex: 1 1 0;
+    background-color: var(--item-course);
+    box-shadow: rgb(0 0 0 / 15%) 2px 4px 6px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.container_avatar {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 32px;
+    border-right: 1px solid rgb(240, 240, 240);
+}
+
+.avatar {
+    text-align: left;
+    max-width: 196px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.img_avatar {
+    max-width: 196px;
+    width: 100%;
+    max-height: 196px;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container_course {
+    padding: 36px;
+    width: 75%;
+    height: 100%;
+}
+
+.course_tags{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item_tags{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: lightgray;
+    min-height: 20px;
+    min-width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.course_description{
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    text-align: left;
+    font-size: 16px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    min-height: 40px;
+    max-width: 100px;
+    width: 100%;
+
+    font-size: 20px;
+    text-align: center;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    padding: 3px;
+    align-items: center;
+}
+
+.pipec {
+    text-decoration: none;
+    color: grey;
+}

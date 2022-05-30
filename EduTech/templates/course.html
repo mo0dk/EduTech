@@ -1,0 +1,59 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1" />
+    <link rel="stylesheet" href="{% static '/css/course.css'%}?version=1" />
+    <title>{{ course.name }}</title>
+</head>
+
+  <body>
+    {% include "base/menu.html" %}
+
+    <div class="container">
+      <section class="item_course">
+        <div class="description_course">
+          <div class="course_header">
+            <h1>{{ course.name }}</h1>
+            <p>
+                {{ course.description }}
+            </p>
+          </div>
+
+          <div class="btn">
+            <a class="btn_link" href="{{ '/stream' }}">Смотреть лекцию</a>
+          </div>
+        </div>
+
+        <div class="description_teacher">
+            <img class="img_avatar" src="{% static 'img/ours_teachers/squared_teacher' %}{{ course.teacher.id }}.jpg">
+            <div class="item_description">
+                <h2>{{ course.teacher.name }}</h2>
+                <p>{{ course.teacher.description }}</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="item_courses">
+        <div class="extra">
+          <h2>{{ course.header1 }}</h2>
+          <p>{{ course.description1 }}</p>
+        </div>
+        <div class="extra">
+          <h2>{{ course.header2 }}</h2>
+          <p>{{ course.description2 }}</p>
+        </div>
+        <div class="extra">
+          <h2>{{ course.header3 }}</h2>
+          <p>{{ course.description3 }}</p>
+        </div>
+      </section>
+    </div>
+
+    {% include "base/footer.html" %}
+  </body>
+</html>

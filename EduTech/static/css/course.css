@@ -1,0 +1,137 @@
+.item_course {
+    display: flex;
+
+    margin-bottom: 80px;
+}
+
+
+/* Course Description */
+
+.description_course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100%;
+
+    padding-top: 69px;
+    padding-right: 65px;
+}
+
+.course_header {
+    text-align: inherit;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.course_header > h1 {
+    font-size: 44px;
+    font-weight: 600;
+
+    
+    margin-bottom: 35px;
+}
+
+.course_header > p {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.btn {
+    margin-top: 45px;
+    padding: 10px 10px;
+    text-align: center;
+    align-items: center;
+
+    width: 45%;
+
+    border: 1px solid grey;
+}
+
+.btn_link {
+    text-decoration: none;
+
+    color: grey;
+
+    font-size: 20px;
+}
+
+/* Teacher description*/
+
+.description_teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    min-width: 552px;
+    min-height: 100%;
+
+    top: 30px;
+
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.item_description {
+    color: #fff;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 60px;
+    z-index: 1;
+
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.item_description > h2 {
+    font-size: 24px;
+}
+
+.item_description > p {
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+/* Extra description */
+
+.item_courses {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 0 auto;
+
+    width: 100%;
+}
+
+.extra {
+    padding-right: 70px;
+
+    max-width: 33.33%;
+}
+
+.extra > h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.extra > p {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}

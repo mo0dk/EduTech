@@ -1,0 +1,29 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1" />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/register.css'%}?version=1"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    {% include "base/menu.html" %}
+    <div class="rofl__container">
+      <div class="regCont">
+        <h1>Регистрация</h1>
+        <form action="{% url 'register' %}" method="post">
+          {{ form }} {% csrf_token %}
+          <button type="submit" class="btn btn-default btn-lg">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+
+    {% include "base/footer.html" %}
+  </body>
+</html>

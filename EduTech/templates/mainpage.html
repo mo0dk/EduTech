@@ -1,0 +1,263 @@
+{% load static %}
+
+<head>
+  <meta charset="utf-8" />
+  <title>Edutech</title>
+  <link rel="stylesheet" href="{% static '/css/base.css'%}?version=1" type="text/css"/>
+  <link rel="stylesheet" href="{% static '/css/mainpage.css'%}?version=1" type="text/css"/>
+  <script src="https://kit.fontawesome.com/f75cd8398d.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header_new">
+    <div class="container">
+      <div class="header_inner">
+        <div class="header_logo">EduTech</div>
+
+        <nav class="nav1">
+          <a href="/courses/" class="nav__link1">Курсы</a>
+          <a href="#Reviews" class="nav__link1">Отзывы</a>
+          <a href="#teachers" class="nav__link1">Учителя</a>
+          <a href="#about_us" class="nav__link1">О нас</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <div class="intro">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="container">
+      <div class="intro__inner">
+        <h1 class="intro__title">Welcome to EduTech</h1>
+        <a href="/accounts/register/" class="intro__btn">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About us -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><a id="about_us">О нас</a></h2>
+        <div class="section__text">
+          <p>EduTech — это лучшая образовательная онлайн-платформа в Росcии. Здесь наши учителя помогут вам подтянуть знания по основным предметам, подготовиться к олимпиадам и ОГЭ/ЕГЭ, а так же улучшить знания в области IT.
+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/about_us/free_education.png" />
+            </div>
+            <div class="card__text">Тут может быть ваша реклама</div>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/about_us/certified_teachers.png" />
+            </div>
+            <div class="card__text">Тут может быть ваша реклама</div>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/about_us/no_ddos.png" />
+            </div>
+            <div class="card__text">Тут может быть ваша реклама</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistic -->
+  <div class="statistic">
+    <div class="container">
+      <div class="stat">
+        <div class="stat__item">
+          <div class="stat__num">87%</div>
+          <div class="stat__text">довольных родителей и учеников</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__num">30+</div>
+          <div class="stat__text">различных курсов</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__num">5</div>
+          <div class="stat__text">сертифицированных учителей</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__num">0</div>
+          <div class="stat__text">сбоев за всё время</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__num">91%</div>
+          <div class="stat__text">потребителей остались довольны поддержкой</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teachers -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><a id="teachers">Наши учителя</a></h2>
+        <div class="section__text">
+          <p>
+            Наши учителя — это надежные, проверенные и сертифицированные сотрудники. С ними вы не потеряете увлечение к учебному процессу, так как каждый наш преподователь преподносит материал так, что ученики не теряют интереса и не пропускают уроки.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/ours_teachers/teacher1.png" />
+            </div>
+            <div class="card__text">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-vk"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/ours_teachers/teacher2.png" />
+            </div>
+            <div class="card__text">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-vk"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="/static/img/ours_teachers/teacher3.png" />
+            </div>
+            <div class="card__text">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-vk"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><a id="Reviews">Отзывы</a></h2>
+      </div>
+
+      <div class="clients">
+        <div class="clients__item">
+          <img
+            class="client__photo"
+            src="/static/img/reviews/teachers_review.png"
+            alt=""
+          />
+          <div class="clients__content">
+            <div class="client__name">Ирина</div>
+            <div class="client__prof">Учитель</div>
+            <div class="client__text">
+              Доброго времени суток всем, кто читает данный отзыв!
+              Сейчас, во время вынужденного перехода на дистанционное обучение,
+              приходится искать различные пути для сокращения нагрузки на моих ребят.
+              Для меня одним из выходов стали онлайн-тесты на платформе.
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img class="client__photo" src="/static/img/reviews/houseworks_review.png" alt=""/>
+          <div class="clients__content">
+            <div class="client__name">Татьяна</div>
+            <div class="client__prof">Домохозяйка</div>
+            <div class="client__text">
+              Дочка в этом году закончила 4 класс в домашней онлайн-школе.
+              Всё обучение у нас было исключительно из дома.
+              Хотела бы сказать, что это действительно удобно, когда не нужно тратить время на посещение школы.
+              Ещё и дополнительное время на сон есть. Ну и конечно программа.
+              Она тут составлена очень хорошо. Преподаватели рассказывают очень интересно.
+              Сама смотрю часто уроки с дочкой, и правда можно заслушаться и узнать много)
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img
+            class="client__photo"
+            src="/static/img/reviews/pupichs_review.png"
+            alt=""
+          />
+          <div class="clients__content">
+            <div class="client__name">Виталий Цаль</div>
+            <div class="client__prof">Стример</div>
+            <div class="client__text">
+              Приветствую работяги, Очень советую данную школу для тех,
+              кто на семейном образовании (самообразование с 8-го класса).
+              Диане очень понравилось здесь учится.
+              Очень добрые и отзывчивые учителя, множество дополнительных занятий и клубов.
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img
+            class="client__photo"
+            src="/static/img/reviews/accountants_review.png"
+            alt=""
+          />
+          <div class="clients__content">
+            <div class="client__name">Лариса</div>
+            <div class="client__prof">Бухгалтер</div>
+            <div class="client__text">
+              Остались довольны Едутехом и его домашней школой.
+              Отучившись с ребёнком около года, понимаешь, что такое обучение - совсем не страшно и очень удобно!
+              Я уже молчу, что тут просто на высшем уровне преподносят материал.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
